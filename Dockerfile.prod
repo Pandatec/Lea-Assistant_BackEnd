@@ -1,0 +1,9 @@
+FROM leassistant/lea_node:1.0
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+COPY . ./
+
+ENTRYPOINT ["./entrypoint.sh"]
+CMD ["npm", "run", "build"]
