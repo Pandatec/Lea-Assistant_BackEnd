@@ -1,8 +1,8 @@
 # Lea-Back
 
-| Main | Staging |
-|------|---------|
-| [![Deploy](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml) | [![Deploy](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml) |
+<!-- | Main | Staging |
+|------|---------| -->
+<!-- | [![Deploy](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml) | [![Deploy](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml/badge.svg?branch=staging)](https://github.com/Lea-Voc/Lea-Back/actions/workflows/deploy.yml) | -->
 
 This repository contains all the code for the Lea API and Lea websockets, the landing pages and web application are not in this repository.
 
@@ -28,7 +28,7 @@ The developpment and most up to date branch is `staging`, please use this one fo
 
 2. Checkout the `staging` branch
 
-3. Download staging GCP service key `lea-helper-4963185665f1.json` from [Lea Google Drive](https://drive.google.com/drive/u/1/folders/10qPiAhJ6NpmF4n6_-KXcvcpZCbHRd3OX)  
+3. Download staging GCP service key `lea-helper-4963185665f1.json` from [Lea Google Drive]
 Place it where ever you want - if you choose to have it inside the repository you should have it in your `.git/info/exclude`, it shall not be checked out.
 
 4. Have a `setenv.sh` you can `source` (example in your favorite Bash-like shell: `source setenv.sh`) so that the `GOOGLE_APPLICATION_CREDENTIALS` environment variable (among others) points to the GCP service key.
@@ -106,7 +106,7 @@ The channel will be closed with code **CLOSE_REASON_INVALID_DATA**, and **Error 
 | Error ID | Description |
 |------------------|-----------------|
 | BAD_MSG | Ill-formed JSON supplied as input |
-| BAD_MSG_TYPE | The supplied message type is unknown, see the [WebSocket reference](https://github.com/Lea-Voc/Lea-Wiki/tree/main/websocket) |
+| BAD_MSG_TYPE | The supplied message type is unknown, see the [WebSocket reference](https://github.com/Pandatec/Lea-Assistant_Wiki/tree/main/websocket) |
 | NO_LOGIN_SUPPLIED | Client failed to supply identification within 5 seconds |
 | BAD_LOGIN | Supplied identification is either invalid or outdated |
 | NOT_LOGGED_IN | Must be identified first before proceeding with such request |
