@@ -24,11 +24,11 @@ The developpment and most up to date branch is `staging`, please use this one fo
 
 ## Setup the server
 
-1. Clone `Lea-Back` at `git@github.com:Lea-Voc/Lea-Back.git`
+1. Clone `Lea-Back` at `git@github.com:Pandatec/Lea-Assistant_BackEnd.git`
 
 2. Checkout the `staging` branch
 
-3. Download staging GCP service key `lea-helper-4963185665f1.json` from [Lea Google Drive]
+3. Download staging GCP service key
 Place it where ever you want - if you choose to have it inside the repository you should have it in your `.git/info/exclude`, it shall not be checked out.
 
 4. Have a `setenv.sh` you can `source` (example in your favorite Bash-like shell: `source setenv.sh`) so that the `GOOGLE_APPLICATION_CREDENTIALS` environment variable (among others) points to the GCP service key.
